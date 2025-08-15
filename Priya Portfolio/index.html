@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Priya Patel | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script>
+      tailwind = window.tailwind || {};
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                'Poppins',
+                'ui-sans-serif',
+                'system-ui',
+                'Segoe UI',
+                'Roboto',
+                'Helvetica Neue',
+                'Arial',
+                'Noto Sans',
+                'Apple Color Emoji',
+                'Segoe UI Emoji',
+                'Segoe UI Symbol',
+                'sans-serif'
+              ]
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>  
+
+    <style>
+      html { scroll-behavior: smooth; }
+      .progress-bar {
+        height: 12px;
+        border-radius: 9999px;
+      }
+    </style>
+  </head>
+
+  <body class="antialiased text-slate-800 bg-gradient-to-b from-rose-100 via-indigo-100 to-white">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 px-3 py-2 bg-white text-indigo-700 rounded shadow">
+      Skip to content
+    </a>
+
+    <!-- HEADER -->
+<header class="w-full sticky top-0 z-40 backdrop-blur bg-white/90 border-b border-slate-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between py-4">
+      <a href="#hero" class="text-xl sm:text-2xl font-bold tracking-tight text-indigo-700">Priya Patel</a>
+      <div class="flex items-center space-x-4">
+        <nav aria-label="Primary" class="text-sm font-semibold text-slate-600">
+          <ul class="flex items-center space-x-4 sm:space-x-6">
+            <li><a class="hover:text-indigo-700" href="#about">About</a></li>
+            <li><a class="hover:text-indigo-700" href="#education">Education</a></li>
+            <li><a class="hover:text-indigo-700" href="#projects">Projects</a></li>
+            <li><a class="hover:text-indigo-700" href="#skills">Skills</a></li>
+            <li><a class="hover:text-indigo-700" href="#coding">Coding Profiles</a></li>
+            <li><a class="hover:text-indigo-700" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Music Control Button -->
+       
+        <button id="music-toggle" class="px-3 py-2 rounded-full bg-indigo-200 text-indigo-900 text-sm font-medium hover:bg-indigo-300 transition">
+       🎵 Mute
+</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main id="main">
+
+      <!-- HERO -->
+      <section id="hero" class="relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute -top-24 -left-24 h-72 w-72 bg-pink-300/60 rounded-full blur-3xl"></div>
+          <div class="absolute top-16 -right-16 h-72 w-72 bg-indigo-300/60 rounded-full blur-3xl"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+          <div class="max-w-3xl">
+            <p class="mb-3 inline-block px-3 py-1 rounded-full bg-indigo-200 text-indigo-800 text-xs font-semibold tracking-wide">Hi, I’m</p>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-slate-900">Priya Patel</h1>
+            <p class="mt-3 text-lg sm:text-xl text-slate-800 font-medium">Full Stack Developer crafting cheerful, accessible, and performant web experiences.</p>
+            <div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-3">
+              <a href="#projects" class="inline-flex items-center justify-center px-5 py-3 rounded-md bg-indigo-600 text-white font-semibold shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">View Projects</a>
+              <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 rounded-md bg-white text-indigo-700 font-semibold shadow border-2 border-indigo-300 hover:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="py-16 sm:py-20 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-12">
+            <div class="flex-shrink-0">
+              <div class="relative">
+                <img src="profile.jpg" alt="Portrait of Priya Patel"
+                     class="h-48 w-48 sm:h-64 sm:w-64 md:h-72 md:w-72 rounded-full object-cover shadow-xl ring-4 ring-white border-4 border-slate-200" />
+                <div class="absolute -z-10 -top-4 -left-4 h-24 w-24 rounded-full bg-pink-300/80 blur-2xl"></div>
+                <div class="absolute -z-10 -bottom-6 -right-6 h-28 w-28 rounded-full bg-indigo-300/80 blur-2xl"></div>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="rounded-2xl p-1 bg-gradient-to-br from-pink-300 via-indigo-300 to-teal-300 shadow-lg border-2 border-slate-200">
+                <div class="rounded-2xl bg-white/90 backdrop-blur p-6 sm:p-8">
+                  <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">About Me</h2>
+                  <p class="mt-4 text-slate-700">
+                    Enthusiastic and fast-learning computer science student with a strong interest in full stack development.
+                    Familiar with HTML, CSS, JavaScript, Python, and FastAPI, and currently building projects to strengthen skills
+                    in web development.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white to-rose-100/90">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Education</h2>
+            <p class="mt-3 text-slate-700">A snapshot of my academic journey.</p>
+          </div>
+          <ol class="mt-10 relative border-l-4 border-slate-300">
+            <li class="mb-10 ml-6">
+              <span class="absolute -left-3 h-6 w-6 rounded-full bg-indigo-500 ring-4 ring-white"></span>
+              <div class="p-5 bg-white rounded-xl shadow border-2 border-slate-200">
+                <h3 class="font-bold text-slate-900">BTech in Computer Science</h3>
+                <p class="text-sm text-slate-600 mt-1">Pranveer Singh Institute of Technology • CGPA 8.56 • Expected 2027</p>
+              </div>
+            </li>
+            <li class="mb-10 ml-6">
+              <span class="absolute -left-3 h-6 w-6 rounded-full bg-pink-500 ring-4 ring-white"></span>
+              <div class="p-5 bg-white rounded-xl shadow border-2 border-slate-200">
+                <h3 class="font-bold text-slate-900">Intermediate</h3>
+                <p class="text-sm text-slate-600 mt-1">Chinmaya Vidyalaya • 2023</p>
+              </div>
+            </li>
+            <li class="ml-6">
+              <span class="absolute -left-3 h-6 w-6 rounded-full bg-emerald-500 ring-4 ring-white"></span>
+              <div class="p-5 bg-white rounded-xl shadow border-2 border-slate-200">
+                <h3 class="font-bold text-slate-900">High School</h3>
+                <p class="text-sm text-slate-600 mt-1">Chinmaya Vidyalaya • 2021</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="py-16 sm:py-20 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Projects</h2>
+            <p class="mt-3 text-slate-700">Things I’ve built that I’m proud of.</p>
+          </div>
+          <div class="mt-10 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="group bg-gradient-to-br from-fuchsia-200 via-rose-200 to-amber-200 rounded-2xl shadow-lg border-2 border-slate-200 overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-slate-900">AI Voice Agent</h3>
+                <p class="mt-2 text-sm text-slate-800">Full-stack voice assistant using Murf API, real-time playback, audio upload, FastAPI backend, secure .env API key.</p>
+                <a href="https://github.com/priya011006" target="_blank" class="mt-4 inline-flex items-center text-indigo-700 hover:text-indigo-800 font-medium">GitHub
+                  <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+              </div>
+            </article>
+            <article class="group bg-gradient-to-br from-emerald-200 via-cyan-200 to-indigo-200 rounded-2xl shadow-lg border-2 border-slate-200 overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-slate-900">Daily Dynamo</h3>
+                <p class="mt-2 text-sm text-slate-800">Web app for daily task management, goal setting, and progress tracking.</p>
+                <a href="https://github.com/priya011006" target="_blank" class="mt-4 inline-flex items-center text-indigo-700 hover:text-indigo-800 font-medium">GitHub
+                  <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+            
+        <!-- Skills -->
+<section id="skills" class="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white to-rose-100/90">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-3xl">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Skills</h2>
+      <p class="mt-3 text-slate-700">Technologies and tools I enjoy working with.</p>
+    </div>
+
+    <div class="mt-8 space-y-6">
+      <div>
+        <p class="font-medium text-slate-800">C</p>
+        <div class="progress-bar bg-indigo-200">
+          <div class="h-full bg-indigo-500 rounded-full" style="width: 85%"></div>
+        </div>
+      </div>
+      <div>
+        <p class="font-medium text-slate-800">C++</p>
+        <div class="progress-bar bg-pink-200">
+          <div class="h-full bg-pink-500 rounded-full" style="width: 80%"></div>
+        </div>
+      </div>
+      <div>
+        <p class="font-medium text-slate-800">Python</p>
+        <div class="progress-bar bg-emerald-200">
+          <div class="h-full bg-emerald-500 rounded-full" style="width: 75%"></div>
+        </div>
+      </div>
+      <div>
+        <p class="font-medium text-slate-800">HTML</p>
+        <div class="progress-bar bg-orange-200">
+          <div class="h-full bg-orange-500 rounded-full" style="width: 90%"></div>
+        </div>
+      </div>
+      <div>
+        <p class="font-medium text-slate-800">CSS</p>
+        <div class="progress-bar bg-indigo-200">
+          <div class="h-full bg-indigo-500 rounded-full" style="width: 88%"></div>
+        </div>
+      </div>
+      <div>
+        <p class="font-medium text-slate-800">JavaScript</p>
+        <div class="progress-bar bg-amber-200">
+          <div class="h-full bg-amber-500 rounded-full" style="width: 70%"></div>
+        </div>
+      </div>
+      <div>
+        <p class="font-medium text-slate-800">FastAPI</p>
+        <div class="progress-bar bg-fuchsia-200">
+          <div class="h-full bg-fuchsia-500 rounded-full" style="width: 65%"></div>
+        </div>
+      </div>
+      <div>
+        <p class="font-medium text-slate-800">DSA</p>
+        <div class="progress-bar bg-rose-200">
+          <div class="h-full bg-rose-500 rounded-full" style="width: 60%"></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+      <!-- CODING PROFILES -->
+      <section id="coding" class="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-indigo-100 to-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 text-center">Coding Profiles</h2>
+          <p class="mt-3 text-slate-700 text-center">Check out my competitive programming and problem-solving profiles.</p>
+          <div class="mt-10 grid gap-6 sm:grid-cols-2 max-w-2xl mx-auto">
+            <div class="bg-white rounded-xl shadow border-2 border-slate-300 p-6 flex flex-col items-center">
+              <a href="https://leetcode.com/u/priya2005dec/" target="_blank" class="transform transition hover:scale-110">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" class="h-20 w-20 object-contain" />
+              </a>
+              <p class="mt-4 font-semibold text-slate-900">LeetCode</p>
+            </div>
+            <div class="bg-white rounded-xl shadow border-2 border-slate-300 p-6 flex flex-col items-center">
+              <a href="https://www.hackerrank.com/profile/pp05dec" target="_blank" class="transform transition hover:scale-110">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" alt="HackerRank" class="h-20 w-20 object-contain" />
+              </a>
+              <p class="mt-4 font-semibold text-slate-900">HackerRank</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-indigo-100 via-pink-100 to-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Contact Me</h2>
+            <p class="mt-3 text-slate-700">Feel free to send me a message — I’ll get back to you soon!</p>
+          </div>
+
+          <!-- FORM -->
+          <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-8 border-2 border-slate-300">
+            <form id="contactForm" action="https://formspree.io/f/mkgzekqr" method="POST" class="space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-slate-700">Name</label>
+                <input type="text" id="name" name="name" required class="mt-2 w-full rounded-lg border-2 border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-pink-400 transition" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-semibold text-slate-700">Email</label>
+                <input type="email" id="email" name="_replyto" required class="mt-2 w-full rounded-lg border-2 border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-pink-400 transition" />
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-semibold text-slate-700">Message</label>
+                <textarea id="message" name="message" rows="5" required class="mt-2 w-full rounded-lg border-2 border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-pink-400 transition"></textarea>
+              </div>
+              <div class="flex justify-center">
+                <button type="submit" class="px-8 py-3 rounded-full bg-gradient-to-r from-pink-400 to-indigo-400 text-white font-semibold shadow-md hover:shadow-lg transform hover:scale-105 transition">Send</button>
+              </div>
+            </form>
+            <p id="successMessage" class="hidden mt-6 text-center text-green-600 font-medium opacity-0 transition-opacity duration-500">✅ Your message has been sent successfully!</p>
+          </div>
+
+ <!-- Social Icons -->
+    <div class="mt-10 flex justify-center gap-6">
+      <!-- Email Icon -->
+      <a href="mailto:priya2005dec@gmail.com" class="w-14 h-14 flex items-center justify-center rounded-full bg-fuchsia-200 text-fuchsia-800 shadow-md hover:shadow-lg hover:scale-110 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21.75 7.5l-9.75 6.75L2.25 7.5m19.5 0A2.25 2.25 0 0019.5 6H4.5a2.25 2.25 0 00-2.25 1.5m19.5 0v9.75A2.25 2.25 0 0119.5 19.5h-15A2.25 2.25 0 012.25 17.25V7.5"/>
+        </svg>
+      </a>
+      <!-- LinkedIn Icon -->
+      <a href="https://www.linkedin.com/in/priya-patel17/" target="_blank" class="w-14 h-14 flex items-center justify-center rounded-full bg-sky-200 text-sky-800 shadow-md hover:shadow-lg hover:scale-110 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7">
+          <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.8v2.1h.05c.53-1 1.83-2.1 3.77-2.1 4.03 0 4.77 2.66 4.77 6.1V24h-4v-7.5c0-1.79-.03-4.1-2.5-4.1-2.5 0-2.88 1.95-2.88 3.97V24h-4V8.5z"/>
+        </svg>
+      </a>
+      <!-- GitHub Icon -->
+      <a href="https://github.com/priya011006" target="_blank" class="w-14 h-14 flex items-center justify-center rounded-full bg-slate-200 text-slate-800 shadow-md hover:shadow-lg hover:scale-110 transition">
+        <svg viewBox="0 0 16 16" class="w-7 h-7 fill-current">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+          0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53
+          .63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07
+          -1.78-.2-3.64-.89-3.64-3.95 
+          0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+          0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
+          .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 
+          2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 
+          1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+          3.95.29.25.54.73.54 1.48 0 1.07-.01 
+          1.93-.01 2.2 0 .21.15.46.55.38A8.01 
+          8.01 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <!-- Success Message Script -->
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
+        const successMsg = document.getElementById('successMessage');
+
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            form.reset();
+            successMsg.classList.remove('hidden');
+            setTimeout(() => successMsg.classList.add('opacity-100'), 50);
+            setTimeout(() => {
+              successMsg.classList.remove('opacity-100');
+              setTimeout(() => successMsg.classList.add('hidden'), 500);
+            }, 4000);
+          } else {
+            alert('Oops! There was a problem sending your message.');
+          }
+        } catch (error) {
+          alert('Error: Could not send message.');
+        }
+      });
+    </script>
+
+<!-- Background Music -->
+<audio id="bg-music" autoplay loop muted>
+  <source src="bg-track.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const music = document.getElementById("bg-music");
+    const toggleBtn = document.getElementById("music-toggle");
+
+    music.volume = 0.25;
+
+    // Enable music after first click (autoplay policy workaround)
+    document.body.addEventListener("click", () => {
+      music.currentTime = 20; // Start from 20 seconds
+      music.muted = false;
+      music.play();
+    }, { once: true });
+
+    // Toggle mute/unmute
+    toggleBtn.addEventListener("click", () => {
+      music.muted = !music.muted;
+      toggleBtn.textContent = music.muted ? "🔇 Unmute" : "🎵 Mute";
+    });
+  });
+</script>
+
+
+
+
+  </body>
+</html>
