@@ -1,0 +1,94 @@
+{
+  "personal": {
+    "name": "Priya Patel",
+    "title": "Full Stack Developer",
+    "description": "Full Stack Developer crafting cheerful, accessible, and performant web experiences.",
+    "about": "Enthusiastic and fast-learning computer science student with a strong interest in full stack development. Familiar with HTML, CSS, JavaScript, Python, and FastAPI, and currently building projects to strengthen skills in web development.",
+    "profileImage": "profile.jpg",
+    "email": "priya2005dec@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/priya-patel17/",
+    "github": "https://github.com/priya011006"
+  },
+  "education": [
+    {
+      "id": 1,
+      "degree": "BTech in Computer Science",
+      "institution": "Pranveer Singh Institute of Technology",
+      "details": "CGPA 8.56 • Expected 2027",
+      "color": "indigo"
+    },
+    {
+      "id": 2,
+      "degree": "Intermediate",
+      "institution": "Chinmaya Vidyalaya",
+      "details": "2023",
+      "color": "pink"
+    },
+    {
+      "id": 3,
+      "degree": "High School",
+      "institution": "Chinmaya Vidyalaya",
+      "details": "2021",
+      "color": "emerald"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "AI Voice Agent",
+      "description": "Full-stack voice assistant using Murf API, real-time playback, audio upload, FastAPI backend, secure .env API key.",
+      "github": "https://github.com/priya011006",
+      "gradient": "from-fuchsia-200 via-rose-200 to-amber-200"
+    },
+    {
+      "id": 2,
+      "name": "Daily Dynamo",
+      "description": "Web app for daily task management, goal setting, and progress tracking.",
+      "github": "https://github.com/priya011006",
+      "gradient": "from-emerald-200 via-cyan-200 to-indigo-200"
+    },
+    {
+      "id": 3,
+      "name": "Notify",
+      "description": "Google Chrome extension with various features like document summarization, language conversion, bookmark options and many more.",
+      "github": "https://github.com/priya011006",
+      "gradient": "from-violet-200 via-purple-200 to-pink-200"
+    }
+  ],
+  "skills": [
+    { "name": "C", "level": 85, "color": "indigo" },
+    { "name": "C++", "level": 80, "color": "pink" },
+    { "name": "Python", "level": 75, "color": "emerald" },
+    { "name": "HTML", "level": 90, "color": "orange" },
+    { "name": "CSS", "level": 88, "color": "indigo" },
+    { "name": "JavaScript", "level": 70, "color": "amber" },
+    { "name": "FastAPI", "level": 65, "color": "fuchsia" },
+    { "name": "DSA", "level": 60, "color": "rose" }
+  ],
+  "codingProfiles": [
+    {
+      "name": "LeetCode",
+      "url": "https://leetcode.com/u/priya2005dec/",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+    },
+    {
+      "name": "HackerRank",
+      "url": "https://www.hackerrank.com/profile/pp05dec",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png"
+    },
+    {
+      "name": "GeeksforGeeks",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg",
+      "url": "https://auth.geeksforgeeks.org/user/yourusername/practice/"
+    }
+    
+  ],
+  "contact": {
+    "formAction": "https://formspree.io/f/mkgzekqr",
+    "successMessage": "✅ Your message has been sent successfully!"
+  },
+  "music": {
+    "track": "bg-track.mp3",
+    "volume": 0.25
+  }
+}
